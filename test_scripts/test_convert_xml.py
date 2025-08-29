@@ -1,7 +1,11 @@
-﻿from modules.convert_xml import convert_xml
+﻿import sys, os
+sys.path.append(os.path.dirname(os.path.dirname(__file__)))
+
+from modules.convert_xml import convert_xml
 
 def test_convert_xml():
-    result = convert_xml("example.mscx")
+    # placeholder — needs a real .mscx later
+    result = convert_xml("examples/example.mscx")
     if result:
         print("Convert OK")
     else:
