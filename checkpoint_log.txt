@@ -1,0 +1,3 @@
+﻿Checkpoint Log
+==============
+[ ] Baseline scaffold committed
