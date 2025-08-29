@@ -1,32 +1,45 @@
-﻿from modules.load_file import load_file
+﻿import argparse
+from pathlib import Path
+from modules.load_file import load_file
 from modules.convert_xml import convert_xml
 from modules.extract_notes import extract_notes
 from modules.save_notes import save_notes
 
-def main():
-    print("=== MuseScore Notes Extractor ===")
+def run(input_path: str, output_path: str):
+    input_path = Path(input_path)
 
-    input_file = "example.mscx"  # replace with real file path
-    score = load_file(input_file)
+    # 1) Load (for basic validation/logging)
+    score = load_file(str(input_path))
     if not score:
-        print("❌ Failed to load file.")
-        return
+        print("❌ Failed to load file:", input_path)
+        return False
 
-    xml_file = convert_xml(input_file)
+    # 2) Convert (no-op for .xml)
+    xml_file = convert_xml(str(input_path))
     if not xml_file:
         print("❌ Conversion failed.")
-        return
+        return False
 
+    # 3) Extract notes
     notes = extract_notes(xml_file)
     if not notes:
         print("❌ No notes extracted.")
-        return
+        return False
 
-    out_file = "output_notes.txt"
-    if save_notes(notes, out_file):
-        print(f"✅ Notes saved to {out_file}")
+    # 4) Save notes
+    ok = save_notes(notes, output_path)
+    if ok:
+        print(f"✅ Notes saved to {output_path}")
     else:
         print("❌ Failed to save notes.")
+    return ok
+
+def main():
+    parser = argparse.ArgumentParser(description="MuseScore/MusicXML → notes list")
+    parser.add_argument("input", help="Path to .mscx or .xml")
+    parser.add_argument("output", help="Path to output .txt")
+    args = parser.parse_args()
+    run(args.input, args.output)
 
 if __name__ == "__main__":
     main()
