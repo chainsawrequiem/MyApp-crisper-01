@@ -1,6 +1,5 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
 ﻿import sys, os
 sys.path.append(os.path.dirname(os.path.dirname(__file__)))
 
@@ -12,16 +11,11 @@ def test_load_file():
 =======
 =======
 >>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 ﻿from modules.load_file import load_file
 
 def test_load_file():
     score = load_file("example.mscx")  # replace with a real file path
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes

@@ -8,7 +8,6 @@ build/
 *.spec
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
 requirements_quick.txt
 myatest_bacup1.yaml
 myatest_bacup2.yaml
@@ -17,9 +16,6 @@ requirements.txt
 env_snapshot.txt
 env_snapshot.yam
 python_stub.bak
-=======
-.vscode/
->>>>>>> Stashed changes
 =======
 .vscode/
 >>>>>>> Stashed changes

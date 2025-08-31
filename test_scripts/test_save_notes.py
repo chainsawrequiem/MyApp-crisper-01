@@ -1,6 +1,5 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
 ﻿import sys, os
 sys.path.append(os.path.dirname(os.path.dirname(__file__)))
 
@@ -14,8 +13,6 @@ def test_save_notes():
 =======
 =======
 >>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 ﻿from modules.save_notes import save_notes
 
 def test_save_notes():
@@ -24,9 +21,6 @@ def test_save_notes():
     save_notes(notes, out_file)
     print("Saved notes to", out_file)
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes

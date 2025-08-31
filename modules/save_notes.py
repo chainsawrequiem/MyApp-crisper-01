@@ -1,6 +1,5 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
 ﻿from pathlib import Path
 
 def save_notes(notes, out_file):
@@ -23,8 +22,6 @@ def save_notes(notes, out_file):
 =======
 =======
 >>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 ﻿def save_notes(notes, out_file):
     """
     Save a list of note names to a text file, one per line.
@@ -33,9 +30,6 @@ def save_notes(notes, out_file):
     # TODO: implement save logic
     return False
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
