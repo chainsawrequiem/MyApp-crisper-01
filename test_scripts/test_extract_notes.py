@@ -1,12 +1,9 @@
-﻿import sys, os
-sys.path.append(os.path.dirname(os.path.dirname(__file__)))
-
-from modules.extract_notes import extract_notes
+﻿from modules.extract_notes import extract_notes
 
 def test_extract_notes():
-    notes = extract_notes("examples/example.xml")
+    notes = extract_notes("example.xml")
     if notes:
-        print("Extract OK:", notes)
+        print("Extract OK:", notes[:10])
     else:
         print("Extract FAILED")
 

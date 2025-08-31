@@ -1,11 +1,7 @@
-﻿import sys, os
-sys.path.append(os.path.dirname(os.path.dirname(__file__)))
-
-from modules.load_file import load_file
+﻿from modules.load_file import load_file
 
 def test_load_file():
-    # use the dummy XML we created so this can succeed today
-    score = load_file("examples/example.xml")
+    score = load_file("example.mscx")  # replace with a real file path
     if score:
         print("Load OK:", score)
     else:
