@@ -1,5 +1,6 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 ﻿import sys, os
 sys.path.append(os.path.dirname(os.path.dirname(__file__)))
 
@@ -12,6 +13,8 @@ def test_extract_notes():
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 ﻿from modules.extract_notes import extract_notes
 
 def test_extract_notes():
@@ -19,6 +22,9 @@ def test_extract_notes():
     if notes:
         print("Extract OK:", notes[:10])
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes

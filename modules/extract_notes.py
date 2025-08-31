@@ -1,5 +1,6 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 ﻿from music21 import converter, note, chord
 
 def extract_notes(xml_path):
@@ -27,6 +28,8 @@ def extract_notes(xml_path):
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 ﻿def extract_notes(xml_path):
     """
     Extract note names from a MusicXML file.
@@ -35,6 +38,9 @@ def extract_notes(xml_path):
     # TODO: implement note extraction logic
     return []
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
