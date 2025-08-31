@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 ﻿from music21 import converter, note, chord
 
 def extract_notes(xml_path):
@@ -22,3 +23,12 @@ def extract_notes(xml_path):
             for p in sorted(n.pitches, key=lambda p: p.midi):
                 names.append(p.nameWithOctave)
     return names
+=======
+﻿def extract_notes(xml_path):
+    """
+    Extract note names from a MusicXML file.
+    Returns a list of notes in order, or an empty list if extraction fails.
+    """
+    # TODO: implement note extraction logic
+    return []
+>>>>>>> Stashed changes

@@ -1,0 +1,21 @@
+{
+  // Pin Python interpreter to your conda env
+  "python.defaultInterpreterPath": "C:\\Users\\Jerome\\anaconda3\\envs\\myapp_env\\python.exe",
+  // Git: make sure unsaved files are saved before committing
+  "git.promptToSaveFilesBeforeCommit": "always",
+  // Auto-save all files after short delay
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+  // Auto-activate conda env in VS Code terminal
+  "terminal.integrated.defaultProfile.windows": "Anaconda (myatest)",
+  "terminal.integrated.profiles.windows": {
+    "Anaconda (myapp_env)": {
+      "path": "C:\\Windows\\System32\\cmd.exe",
+      "args": [
+        "/K",
+        "C:\\Users\\Jerome\\anaconda3\\Scripts\\activate.bat",
+        "C:\\Users\\Jerome\\anaconda3\\envs\\myatest"
+      ]
+    }
+  }
+}
