@@ -1,0 +1,16 @@
+﻿__pycache__/
+*.pyc
+.DS_Store
+venv/
+.env
+dist/
+build/
+*.spec
+requirements_quick.txt
+myatest_bacup1.yaml
+myatest_bacup2.yaml
+requirements.txt
+.conda
+env_snapshot.txt
+env_snapshot.yam
+python_stub.bak
